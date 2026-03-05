@@ -12,14 +12,18 @@ public class Main {
     public static void main(String[] args) {
         List<Aplicant> listaAngajati;
         AplicantiLoader angLoader = new AngajatiLoader();
+        System.out.println("*Seminar 2*");
+        System.out.println();
         try {
             listaAngajati = angLoader.loadAplicanti("angajati.txt");
             for(Aplicant angajat:listaAngajati)
                 System.out.println(angajat.toString());
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
+        System.out.println("*Seminar 3*");
+        System.out.println();
     }
 
 }

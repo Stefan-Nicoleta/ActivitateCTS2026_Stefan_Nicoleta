@@ -31,15 +31,14 @@ public class Angajat extends Aplicant{
 
     @Override
     public String toString() {
-        return "Angajat: Nume=" + nume + ", Prenume=" + prenume
-                + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte + ", DenumireProiect="
-                + Arrays.toString(denumireProiect) + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
+        return "Angajat: \n Nume si Prenume=" + nume + " " + prenume
+                + "\n Varsta=" + varsta + "\n Punctaj=" + punctaj + "\n Nr_proiecte=" + nr_proiecte + "\n DenumireProiect="
+                + Arrays.toString(denumireProiect) + "\n Ocupatie=" + ocupatie + "\n salariu=" + salariu+"\n";
     }
 
 
     public int finantare() {
         int s=10;
-        // TODO Auto-generated method stub
         System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
         return s;
     }
