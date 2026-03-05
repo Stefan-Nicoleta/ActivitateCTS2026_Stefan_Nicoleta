@@ -1,15 +1,25 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.io.FileNotFoundException;
+import java.util.List;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+import ro.ase.cts.clase.Angajat;
+import ro.ase.cts.clase.Aplicant;
+import ro.ase.cts.loaders.AngajatiLoader;
+import ro.ase.cts.loaders.AplicantiLoader;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        List<Aplicant> listaAngajati;
+        AplicantiLoader angLoader = new AngajatiLoader();
+        try {
+            listaAngajati = angLoader.loadAplicanti("angajati.txt");
+            for(Aplicant angajat:listaAngajati)
+                System.out.println(angajat.toString());
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
+
 }
