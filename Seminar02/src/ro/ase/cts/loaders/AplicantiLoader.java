@@ -15,7 +15,7 @@ public abstract class AplicantiLoader {
         int varsta = Integer.valueOf(input.nextInt());
         int punctaj = Integer.valueOf(input.nextInt());
         int nr = Integer.valueOf(input.nextInt());
-        String[] vect = new String[5];
+        String[] vect = new String[nr]; //nr in loc de 5
         for (int i = 0; i < nr; i++)
             vect[i] = input.next();
 
@@ -23,7 +23,7 @@ public abstract class AplicantiLoader {
         aplicant.setPrenume(prenume);
         aplicant.setVarsta(varsta);
         aplicant.setPunctaj(punctaj);
-        aplicant.setNr_proiecte(nr, vect);
+        aplicant.setNrproiecte(nr, vect);
 
     }
 

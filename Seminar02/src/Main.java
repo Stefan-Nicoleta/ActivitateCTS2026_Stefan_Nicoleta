@@ -16,14 +16,23 @@ public class Main {
         System.out.println();
         try {
             listaAngajati = angLoader.loadAplicanti("angajati.txt");
-            for(Aplicant angajat:listaAngajati)
+            for(Aplicant angajat:listaAngajati){
                 System.out.println(angajat.toString());
+                System.out.println();
+                angajat.afisareFinantare(); //YAGNI
+                System.out.println();
+                angajat.afisareStatut();
+                System.out.println();
+            }
+
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
-        System.out.println("*Seminar 3*");
         System.out.println();
+        System.out.println("*Seminar 3*");
+        System.out.println("Principii rezolvate: DRY, lowerCaseCamel, YAGNI & KISS, SOLID (tot in afara de I (ISP)");
     }
 
 }

@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AngajatiLoader extends AplicantiLoader {
+    //metoda loadAplicanti incalca principiul DRY - DON'T REPEAT YOURSELF!
     @Override
     public List<Aplicant> loadAplicanti(String file) throws FileNotFoundException {
         Scanner input2 = new Scanner(new File(file));
