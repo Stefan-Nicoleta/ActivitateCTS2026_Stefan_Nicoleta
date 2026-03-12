@@ -1,7 +1,7 @@
 package ro.ase.cts.hotelpck.hotel;
 
 
-//Singleton
+//Singleton -
 public class Hotel {
     private String denumireHotel;
     private int numarCamere;
