@@ -37,6 +37,8 @@ public class Program {
         System.out.println(internare6.toString()); //Internare{numePacient='Gigi', patRabatabil=false, micDejunInclus=true, papuciDeCamera=false, halat=false}
         System.out.println();
 
+
+        //testing
         internare5.setHalat(true);
         System.out.println(internare5.toString());
     }
