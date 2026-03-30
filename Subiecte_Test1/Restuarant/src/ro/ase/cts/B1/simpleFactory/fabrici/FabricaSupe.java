@@ -15,7 +15,7 @@ public class FabricaSupe {
             case VITA: return new SupaDeVita();
             case CIUPERCI: return new SupaDeCiuperci();
 
-            default: throw new Exception("Nu exista");
+            default: return null;
         }
     }
 
