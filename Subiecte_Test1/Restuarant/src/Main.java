@@ -4,8 +4,7 @@ import ro.ase.cts.B1.simpleFactory.fabrici.FabricaSupe;
 import ro.ase.cts.B2.builder.Rezervare;
 import ro.ase.cts.B2.builder.RezervareBuilder;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) throws Exception {
 
