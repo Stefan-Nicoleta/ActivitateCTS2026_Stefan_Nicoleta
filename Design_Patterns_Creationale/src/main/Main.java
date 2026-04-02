@@ -11,6 +11,11 @@ import prototype.Reteta;
 import simpleFactory.Asistent;
 import simpleFactory.FabricaPersonal;
 import simpleFactory.TipPersonal;
+import singleton.registry.clase.Personal;
+import singleton.registry.registryul.SingletonRegistry;
+
+import java.util.ArrayList;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -34,13 +39,27 @@ public class Main {
 
 
         //prototype
-        IReteta reteta = new Reteta(120,"Nurofen");
+        List<String > lista = new ArrayList<>();
+
+        lista.add("Ceva");
+        lista.add("Ceva2");
+
+        IReteta reteta = new Reteta(120,"Nurofen", lista);
         IReteta reteta1 = reteta.clone();
 
         System.out.println(reteta.toString());
         System.out.println(reteta1.toString());
 
 
+        //singleton registry
+        Personal personal = new singleton.registry.clase.Asistent("Nicoleta");
+        Personal personal2 = new singleton.registry.clase.Asistent("Razvan");
+
+        SingletonRegistry.setRegister(1,personal);
+        SingletonRegistry.setRegister(2,personal2);
+       // SingletonRegistry.setRegister(1,personal2);
+
+        System.out.println(SingletonRegistry.getPersonal(1));
 
 
 
