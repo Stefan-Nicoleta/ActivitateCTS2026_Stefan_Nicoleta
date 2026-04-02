@@ -6,6 +6,8 @@ import factoryMethod.clase.PersonalMedical;
 import factoryMethod.clase.PersonalSpital;
 import factoryMethod.enums.TipMedical;
 import factoryMethod.factory.FabricaMedical;
+import prototype.IReteta;
+import prototype.Reteta;
 import simpleFactory.Asistent;
 import simpleFactory.FabricaPersonal;
 import simpleFactory.TipPersonal;
@@ -29,6 +31,15 @@ public class Main {
         PersonalMedical personalMedical = fabricaMedical.createMedical(TipMedical.MEDIC);
         personalMedical.setDenumire("Altceva");
         personalMedical.afiseaza();
+
+
+        //prototype
+        IReteta reteta = new Reteta(120,"Nurofen");
+        IReteta reteta1 = reteta.clone();
+
+        System.out.println(reteta.toString());
+        System.out.println(reteta1.toString());
+
 
 
 
