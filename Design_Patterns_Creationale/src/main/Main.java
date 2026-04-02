@@ -2,6 +2,10 @@ package main;
 
 import buider.Pacient;
 import buider.PacientBuilder;
+import factoryMethod.clase.PersonalMedical;
+import factoryMethod.clase.PersonalSpital;
+import factoryMethod.enums.TipMedical;
+import factoryMethod.factory.FabricaMedical;
 import simpleFactory.Asistent;
 import simpleFactory.FabricaPersonal;
 import simpleFactory.TipPersonal;
@@ -14,11 +18,20 @@ public class Main {
         Pacient p = new PacientBuilder().setMicDejunInclus(true).setPatRabatabil(true).build();
         System.out.println(p.toString());
         //simple factory
-
-
         Asistent asistent = (Asistent) FabricaPersonal.createPersonal(TipPersonal.ASISTENT);
-
         System.out.println(asistent);
+
+        //factory method
+        FabricaMedical fabricaMedical = new FabricaMedical();
+        PersonalSpital personalSpital = fabricaMedical.createMedical(TipMedical.MEDIC);
+
+
+        PersonalMedical personalMedical = fabricaMedical.createMedical(TipMedical.MEDIC);
+        personalMedical.setDenumire("Altceva");
+        personalMedical.afiseaza();
+
+
+
 
     }
 }
