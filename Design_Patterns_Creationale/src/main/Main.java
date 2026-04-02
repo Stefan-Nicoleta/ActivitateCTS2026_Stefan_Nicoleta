@@ -14,6 +14,7 @@ import simpleFactory.TipPersonal;
 import singleton.lazy.Cuptor;
 import singleton.registry.clase.Personal;
 import singleton.registry.registryul.SingletonRegistry;
+import singleton.threadsafe.CuptorT;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,6 +71,21 @@ public class Main {
         System.out.println(cuptor.toString());
         System.out.println(cuptor2.toString());
 
+
+        //thread safe
+
+        Thread t1 = new Thread(()->{
+            CuptorT c = CuptorT.getInstance("Cuptor electric", 2025);
+            System.out.println("Fir de executie 1"+c+" "+System.identityHashCode(c));
+        });
+
+        Thread t2 = new Thread(()->{
+            CuptorT c2 = CuptorT.getInstance("Cuptor gaz", 2014);
+            System.out.println("Fir de executie 2"+c2+" "+System.identityHashCode(c2));
+        });
+
+        t1.start();
+        t2.start();
 
     }
 }
