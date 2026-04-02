@@ -11,6 +11,7 @@ import prototype.Reteta;
 import simpleFactory.Asistent;
 import simpleFactory.FabricaPersonal;
 import simpleFactory.TipPersonal;
+import singleton.lazy.Cuptor;
 import singleton.registry.clase.Personal;
 import singleton.registry.registryul.SingletonRegistry;
 
@@ -61,6 +62,13 @@ public class Main {
 
         System.out.println(SingletonRegistry.getPersonal(1));
 
+
+
+        //lazy singleton
+        Cuptor cuptor = Cuptor.getInstance("cel mai nou", 2026);
+        Cuptor cuptor2 = Cuptor.getInstance("cel mai vechi", 1990);
+        System.out.println(cuptor.toString());
+        System.out.println(cuptor2.toString());
 
 
     }
