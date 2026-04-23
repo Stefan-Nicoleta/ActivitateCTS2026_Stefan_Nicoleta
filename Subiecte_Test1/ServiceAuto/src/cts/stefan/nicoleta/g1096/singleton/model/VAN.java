@@ -1,4 +1,4 @@
-package cts.stefan.nicoleta.g1096.singleton;
+package cts.stefan.nicoleta.g1096.singleton.model;
 
 public class VAN extends AMasina{
     public VAN(String denumireMasina, String culoare) {

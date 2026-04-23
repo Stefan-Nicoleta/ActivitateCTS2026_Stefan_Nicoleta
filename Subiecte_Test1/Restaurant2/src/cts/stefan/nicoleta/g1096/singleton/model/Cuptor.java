@@ -1,4 +1,4 @@
-package cts.stefan.nicoleta.g1096.singleton;
+package cts.stefan.nicoleta.g1096.singleton.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Seminar03/..iml" filepath="$PROJECT_DIR$/Seminar03/..iml" />
       <module fileurl="file://$PROJECT_DIR$/Subiecte_Test1/Cafenea/Cafenea.iml" filepath="$PROJECT_DIR$/Subiecte_Test1/Cafenea/Cafenea.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Subiecte_Test1/Cafenea2.0/Cafenea2.0.iml" filepath="$PROJECT_DIR$/Subiecte_Test1/Cafenea2.0/Cafenea2.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/DIAGRAMA/DIAGRAMA.iml" filepath="$PROJECT_DIR$/DIAGRAMA/DIAGRAMA.iml" />
       <module fileurl="file://$PROJECT_DIR$/Design_Patterns_Creationale/Design_Patterns_Creationale.iml" filepath="$PROJECT_DIR$/Design_Patterns_Creationale/Design_Patterns_Creationale.iml" />
       <module fileurl="file://$PROJECT_DIR$/Subiecte_Test1/DroneConnection/DroneConnection.iml" filepath="$PROJECT_DIR$/Subiecte_Test1/DroneConnection/DroneConnection.iml" />
@@ -18,9 +19,11 @@
       <module fileurl="file://$PROJECT_DIR$/Seminar04/Seminar04.iml" filepath="$PROJECT_DIR$/Seminar04/Seminar04.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar05/Seminar05.iml" filepath="$PROJECT_DIR$/Seminar05/Seminar05.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar06/Seminar06.iml" filepath="$PROJECT_DIR$/Seminar06/Seminar06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminar07/Seminar07.iml" filepath="$PROJECT_DIR$/Seminar07/Seminar07.iml" />
       <module fileurl="file://$PROJECT_DIR$/SeminarCTS.iml" filepath="$PROJECT_DIR$/SeminarCTS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Subiecte_Test1/ServiceAuto/ServiceAuto.iml" filepath="$PROJECT_DIR$/Subiecte_Test1/ServiceAuto/ServiceAuto.iml" />
       <module fileurl="file://$PROJECT_DIR$/Subiecte_Test1/Subiecte_Test1.iml" filepath="$PROJECT_DIR$/Subiecte_Test1/Subiecte_Test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Subiecte_Test1/TestAuto/TestAuto.iml" filepath="$PROJECT_DIR$/Subiecte_Test1/TestAuto/TestAuto.iml" />
       <module fileurl="file://$PROJECT_DIR$/Restaurant/untitled/untitled.iml" filepath="$PROJECT_DIR$/Restaurant/untitled/untitled.iml" />
     </modules>
   </component>

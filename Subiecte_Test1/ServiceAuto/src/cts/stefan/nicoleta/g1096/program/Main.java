@@ -1,6 +1,6 @@
 package cts.stefan.nicoleta.g1096.program;
 
-import cts.stefan.nicoleta.g1096.singleton.*;
+import cts.stefan.nicoleta.g1096.singleton.model.*;
 
 public class Main {
     public static void main(String[] args) {
