@@ -4,7 +4,7 @@ import ro.ase.cts.adapter.farmacie.Medicament;
 
 public class MedicamentAdapter extends Medicament {
 
-    ro.ase.cts.adapter.spital.Medicament medicamentSpital;
+    private ro.ase.cts.adapter.spital.Medicament medicamentSpital;
 
     public MedicamentAdapter(ro.ase.cts.adapter.spital.Medicament medicamentSpital) {
         super(medicamentSpital.getNumeMedicament());
