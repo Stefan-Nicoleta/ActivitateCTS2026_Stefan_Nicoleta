@@ -1,5 +1,7 @@
 package cts.ase.ro.facade;
 
+
+//Clasa Concreta B
 public class Pacient {
    String numePacient;
    int gravitate;

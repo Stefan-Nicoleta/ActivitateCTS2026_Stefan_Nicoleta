@@ -3,6 +3,7 @@ package cts.ase.ro.facade;
 import java.util.ArrayList;
 import java.util.List;
 
+//Clasa Concreta C
 public class Salon {
     private List<String> paturiLibere = new ArrayList();
 

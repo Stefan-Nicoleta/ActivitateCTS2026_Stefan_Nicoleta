@@ -1,5 +1,7 @@
 package cts.ase.ro.facade;
 
+
+//Facade
 public class Facade {
     //implementare facade
     private Medic medic;
