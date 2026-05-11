@@ -2,6 +2,11 @@ package main;
 
 import cts.ase.ro.adapter.farmacie.Medicament;
 import cts.ase.ro.adapter.spital.MedicamentAdapter;
+import cts.ase.ro.decorator.clase.INotaDePlata;
+import cts.ase.ro.decorator.clase.NotaDePlata;
+import cts.ase.ro.decorator.decorator.DecoratorNotaDePlata;
+import cts.ase.ro.decorator.decorator.NotaDePlataRevelion;
+import cts.ase.ro.decorator.decorator.NotaDePlataZiDeNastere;
 import cts.ase.ro.facade.Facade;
 import cts.ase.ro.facade.Medic;
 import cts.ase.ro.facade.Pacient;
@@ -29,5 +34,17 @@ public class Main {
 
         MedicamentAdapter medicamentAdapter = new MedicamentAdapter(medicament1);
         medicamentAdapter.cumparaMedicament();
+
+
+
+    //3. Decorator
+        INotaDePlata iNotaDePlata = new NotaDePlata();
+        iNotaDePlata.printeazaNota();
+
+
+        DecoratorNotaDePlata decoratorNotaDePlata = new NotaDePlataZiDeNastere();
+        DecoratorNotaDePlata decoratorNotaDePlata2 = new NotaDePlataRevelion();
+        decoratorNotaDePlata.printeazaFelicitare();
+        decoratorNotaDePlata2.printeazaFelicitare();
     }
 }
