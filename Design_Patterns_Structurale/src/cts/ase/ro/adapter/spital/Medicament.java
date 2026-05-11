@@ -1,5 +1,7 @@
 package cts.ase.ro.adapter.spital;
 
+
+//Clasa deja existenta - Medicament din cadrul spitalului
 public class Medicament {
     private String numeMedicament;
     private int pret;
@@ -9,10 +11,13 @@ public class Medicament {
         this.pret = pret;
     }
 
+
+
     public boolean prezintaReteta(){
         return numeMedicament.contains("reteta"); //numai asa ne putem da seama daca are reteta sau nu
     }
 
+    //+ metoda();
     public void achizitioneazaMedicament(){
         if(prezintaReteta()){
             System.out.println("S-a achizionat medicamentul "+this.numeMedicament+" si are si reteta");
