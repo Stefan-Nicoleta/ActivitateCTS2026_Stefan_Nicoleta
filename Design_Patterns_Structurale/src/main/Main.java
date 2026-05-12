@@ -2,6 +2,9 @@ package main;
 
 import cts.ase.ro.adapter.farmacie.Medicament;
 import cts.ase.ro.adapter.spital.MedicamentAdapter;
+import cts.ase.ro.composite.Departamente;
+import cts.ase.ro.composite.IComposite;
+import cts.ase.ro.composite.Sectii;
 import cts.ase.ro.decorator.clase.INotaDePlata;
 import cts.ase.ro.decorator.clase.NotaDePlata;
 import cts.ase.ro.decorator.decorator.DecoratorNotaDePlata;
@@ -47,6 +50,20 @@ public class Main {
         decoratorNotaDePlata.printeazaFelicitare();
         decoratorNotaDePlata2.printeazaFelicitare();
 
+    //5. Composite
+        IComposite iSpital = new Departamente("Spital");
+        IComposite iAdministrativ = new Departamente("Administrativ");
+        IComposite iSecretariat = new Sectii("Secretariat",10);
+
+        ((Departamente) iSpital).adaugaNod(iAdministrativ);
+        ((Departamente) iSpital).adaugaNod(iSecretariat);
+
+        iSpital.afiseazaDetalii();
+
+        ((Departamente) iSpital).stergeNod(iSecretariat);
+        iSpital.afiseazaDetalii();
+        ((Departamente) iSpital).adaugaNod(iAdministrativ);
+        iSpital.afiseazaDetalii();
 
 
     }
