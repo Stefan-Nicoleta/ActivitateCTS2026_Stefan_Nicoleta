@@ -1,5 +1,6 @@
 package proxy;
 
+//Proxy
 public class AutobuzDeNoapte implements MijlocTransport{
     private MijlocTransport mijlocTransport;
 
