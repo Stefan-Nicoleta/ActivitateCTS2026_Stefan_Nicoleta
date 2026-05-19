@@ -14,6 +14,12 @@ import cts.ase.ro.facade.Facade;
 import cts.ase.ro.facade.Medic;
 import cts.ase.ro.facade.Pacient;
 import cts.ase.ro.facade.Salon;
+import cts.ase.ro.flyweight.Client;
+import cts.ase.ro.flyweight.FlyweightFactory;
+import cts.ase.ro.flyweight.IRezervare;
+import cts.ase.ro.flyweight.Rezervare;
+
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -64,6 +70,28 @@ public class Main {
         iSpital.afiseazaDetalii();
         ((Departamente) iSpital).adaugaNod(iAdministrativ);
         iSpital.afiseazaDetalii();
+
+        //Flyweight
+        FlyweightFactory flyweightFactory = new FlyweightFactory();
+        Rezervare rezervare = new Rezervare(5,4,"aaa");
+        Rezervare rezervare1 = new Rezervare(10,2,"llala");
+
+
+        IRezervare iRezervare = flyweightFactory.getDateClient("Nicoleta","0907","nak");
+        iRezervare.detaliiRezervare(rezervare);
+
+        IRezervare iRezervare2 = flyweightFactory.getDateClient("Nicoleta","0907","nak");
+        iRezervare2.detaliiRezervare(rezervare1);
+
+
+        IRezervare iRezervare3 = flyweightFactory.getDateClient("k","0907","nak");
+        iRezervare3.detaliiRezervare(rezervare1);
+
+
+
+
+
+
 
 
     }
