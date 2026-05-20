@@ -3,6 +3,8 @@ package main;
 import B10_Flyweight.Client;
 import B10_Flyweight.FlyweightFactory;
 import B10_Flyweight.Rezervari;
+import B15_Command.Masa;
+import B15_Command.Operator;
 import B16_Chain.Email;
 import B16_Chain.HandlerClient;
 import B16_Chain.Nimic;
@@ -106,5 +108,21 @@ public class Main {
 
         //System.out.println(nrTelefon);
 
+
+        //B15 - Command
+        Masa masa1 = new Masa(5);
+        Masa masa2 = new Masa(10);
+
+        B15_Command.Rezervare rezervare1 = new B15_Command.Rezervare(masa1);
+        B15_Command.Rezervare rezervare2 = new B15_Command.Rezervare(masa2);
+
+
+        Operator operator = new Operator();
+        operator.adaugaComanda(rezervare1);
+        operator.adaugaComanda(rezervare2);
+
+        operator.executaComanda();
+        operator.executaComanda();
+        
     }
 }
