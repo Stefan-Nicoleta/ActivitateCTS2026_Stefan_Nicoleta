@@ -1,5 +1,8 @@
 package cts.ase.ro.observer.clase;
 
+
+
+//Observer A
 public class PacientAbonat implements Pacient{
     private String nume;
     private int varsta;
