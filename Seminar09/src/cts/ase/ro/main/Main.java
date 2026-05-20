@@ -58,6 +58,20 @@ public class Main {
         operator.executaFisa();
 
 
+        //Observer V2
+        cts.ase.ro.observer.clase_v2.Spital spital1 = new cts.ase.ro.observer.clase_v2.Spital();
+        cts.ase.ro.observer.clase_v2.Pacient pacient7 = new cts.ase.ro.observer.clase_v2.PacientAbonat("Nicoleta");
+        cts.ase.ro.observer.clase_v2.Pacient pacient8 = new cts.ase.ro.observer.clase_v2.PacientAbonat("Flavia");
+        cts.ase.ro.observer.clase_v2.Pacient pacient9 = new cts.ase.ro.observer.clase_v2.PacientAbonat("Razvan");
+
+        spital1.abonarePacient(pacient7);
+        spital1.abonarePacient(pacient8);
+        spital1.abonarePacient(pacient9);
+
+        spital1.noitifcaVirus();
+        System.out.println();
+        spital1.dezabonarePacient(pacient8);
+        spital1.notificaEpidemie();
 
     }
 
