@@ -1,8 +1,11 @@
 package main;
 
-import B10_Flyweight.Client;
 import B10_Flyweight.FlyweightFactory;
 import B10_Flyweight.Rezervari;
+import B11_Strategy.Client;
+import B11_Strategy.IModPlata;
+import B11_Strategy.PlataCard;
+import B11_Strategy.PlataCash;
 import B15_Command.Masa;
 import B15_Command.Operator;
 import B16_Chain.Email;
@@ -123,6 +126,13 @@ public class Main {
 
         operator.executaComanda();
         operator.executaComanda();
-        
+
+
+        //B11 - Strategy
+        IModPlata card = new PlataCard();
+        IModPlata cash = new PlataCash();
+        Client client = new Client();
+        client.setiModPlata(cash);
+        client.modDePlata();
     }
 }
