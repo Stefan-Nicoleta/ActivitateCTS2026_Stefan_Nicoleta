@@ -3,6 +3,10 @@ package main;
 import B10_Flyweight.Client;
 import B10_Flyweight.FlyweightFactory;
 import B10_Flyweight.Rezervari;
+import B16_Chain.Email;
+import B16_Chain.HandlerClient;
+import B16_Chain.Nimic;
+import B16_Chain.NumarTelefon;
 import B5_Adapter.Adaptor;
 import B5_Adapter.LucruBar;
 import B5_Adapter.ProduseBucatarie;
@@ -81,5 +85,26 @@ public class Main {
         iRezervare1.detaliiRezervare(rezervari);
         iRezervare2.detaliiRezervare(rezervari);
         iRezervare3.detaliiRezervare(rezervari);
+
+
+
+        //B16 - Chain
+        HandlerClient nrTelefon = new NumarTelefon();
+        HandlerClient email= new Email();
+        HandlerClient nimic = new Nimic();
+
+
+      nrTelefon.setHandler(email);
+      email.setHandler(nimic);
+
+
+        System.out.println( nrTelefon.metodaGestionareCerere(32498327,""));
+        System.out.println(nrTelefon.metodaGestionareCerere(0,""));
+        System.out.println(nrTelefon.metodaGestionareCerere(0,"ddd"));
+
+
+
+        //System.out.println(nrTelefon);
+
     }
 }
