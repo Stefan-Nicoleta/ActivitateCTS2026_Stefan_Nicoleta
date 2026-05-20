@@ -89,6 +89,13 @@ public class Main {
 
 
 
+        //Proxy
+        cts.ase.ro.proxy.IRezervare iRezervare1 = new cts.ase.ro.proxy.Rezervare("Nicoleta");
+        cts.ase.ro.proxy.IRezervare iRezervare4 = new cts.ase.ro.proxy.Rezervare4Persoane(iRezervare1,2);
+        iRezervare4.aprobareRezervare();
+
+
+
 
 
 
