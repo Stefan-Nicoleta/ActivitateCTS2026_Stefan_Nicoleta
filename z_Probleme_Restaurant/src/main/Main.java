@@ -6,6 +6,8 @@ import B11_Strategy.Client;
 import B11_Strategy.IModPlata;
 import B11_Strategy.PlataCard;
 import B11_Strategy.PlataCash;
+import B12_Observer.ClientFidel;
+import B12_Observer.Restaurant;
 import B15_Command.Masa;
 import B15_Command.Operator;
 import B16_Chain.Email;
@@ -134,5 +136,24 @@ public class Main {
         Client client = new Client();
         client.setiModPlata(cash);
         client.modDePlata();
+
+
+        //B12 - Observer
+        Restaurant restaurant = new Restaurant();
+        ClientFidel clientFidel1 = new ClientFidel("Nicoleta");
+        ClientFidel clientFidel2 = new ClientFidel("Razvan");
+        ClientFidel clientFidel3 = new ClientFidel("Flavia");
+
+        restaurant.abonareClientFidel(clientFidel1);
+        restaurant.abonareClientFidel(clientFidel2);
+        restaurant.abonareClientFidel(clientFidel3);
+
+        restaurant.notificaIntroducereMeniuNou();
+        restaurant.notificaOfertaPret();
+
+        restaurant.notificaClientFidel("Altceva");
+        restaurant.dezabonareClientFidel(clientFidel2);
+        restaurant.notificaOfertaPret();
+
     }
 }
