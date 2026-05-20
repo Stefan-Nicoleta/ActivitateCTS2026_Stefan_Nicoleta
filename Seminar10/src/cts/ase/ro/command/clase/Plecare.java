@@ -1,6 +1,8 @@
 package cts.ase.ro.command.clase;
 
+//Comanda Concreta
 public class Plecare implements ICommand{
+    //-Executant executant;
     private Autobuz autobuz;
     private int nrLinie;
 
@@ -9,6 +11,8 @@ public class Plecare implements ICommand{
         this.nrLinie = nrLinie;
     }
 
+
+    //+executa()
     @Override
     public void pleacaInCursa() {
         autobuz.pornestePeTraseu(nrLinie);

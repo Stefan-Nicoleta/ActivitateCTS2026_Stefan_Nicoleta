@@ -3,6 +3,9 @@ package cts.ase.ro.command.clase;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
+//Invoker (ManagerComenzi)
 public class Operator {
     private List<ICommand> listaComenzi;
 
