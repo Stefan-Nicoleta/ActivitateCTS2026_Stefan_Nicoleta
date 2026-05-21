@@ -34,6 +34,7 @@
       <module fileurl="file://$PROJECT_DIR$/Subiecte_Test1/TestAuto/TestAuto.iml" filepath="$PROJECT_DIR$/Subiecte_Test1/TestAuto/TestAuto.iml" />
       <module fileurl="file://$PROJECT_DIR$/Restaurant/untitled/untitled.iml" filepath="$PROJECT_DIR$/Restaurant/untitled/untitled.iml" />
       <module fileurl="file://$PROJECT_DIR$/z_Probleme_Restaurant/z_Probleme_Restaurant.iml" filepath="$PROJECT_DIR$/z_Probleme_Restaurant/z_Probleme_Restaurant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/z_Probleme_Spital/z_Probleme_Spital.iml" filepath="$PROJECT_DIR$/z_Probleme_Spital/z_Probleme_Spital.iml" />
     </modules>
   </component>
 </project>
